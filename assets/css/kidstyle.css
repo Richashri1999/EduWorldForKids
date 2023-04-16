@@ -1,0 +1,221 @@
+*
+{
+	padding: 0;
+	margin: 0;
+  box-sizing: border-box;
+
+}
+body
+{
+  background-image: url(../images/bg/img15.jpg);
+  background-repeat: no-repeat;
+}
+/* Bordered form */
+#login-form 
+{
+  border: 3px solid #f1f1f1;
+  position: fixed;
+  /*float: right;*/
+  right: 0;
+  width: 27%;
+  /*width: 370px;*/
+  height: 100%;
+  /*height: 625px;*/
+  background-image: linear-gradient(pink,lightpink,lightblue,lightgrey,white,lightgrey,lightblue);
+
+}
+
+/* Full-width inputs */
+#login-form input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#login-form button {
+  /*background-color: #4CAF50;*/
+  background-color:#00ced1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* Center the image inside this container */
+#login-form .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/*image */
+#login-form img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+#login-form .container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+/*span.psw {
+  float: right;
+  padding-top: 16px;
+}*/
+
+/* Change styles for span and cancel button on extra small screens */
+/*@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  
+}*/
+
+/*Responsive login-form*/
+@media screen and (max-width: 1100px) {
+ #login-form
+  {
+  float: none;
+  margin: 0 auto;
+  /*position: not fixed;*/
+  right: 10%;
+  width: 80%;
+  }
+	}
+/*-------------------------------*/
+
+
+	/*--------------------------------*/
+/* Full-width input fields */
+#signup-form
+{
+  width: 80%;
+  height: 100%;
+}
+#signup-form input[type=text], input[type=password] 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 0px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+#signup-form input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+#signup-form button 
+{
+  /*background-color: #4CAF50;*/
+  /*background-color:#00ced1;*/
+  background-color: #ff69b4;
+  color: white;
+  padding: 14px 20px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+}
+
+#signup-form button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+#signup-form .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+#signup-form .cancelbtn, .signup{
+  float: left;
+  width: 40%;
+  margin-right: 20%;
+}
+
+/* Add padding to container elements */
+#signup-form .container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /*background-color: #474e5d;*/
+  background-color: #5f9ea0;
+  /*padding-top: 30px;*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+#signup-form hr 
+{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+#signup-form .close 
+{
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+#signup-form .close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+#signup-form .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
